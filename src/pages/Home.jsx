@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <div className="landing-page" style={{ textAlign: 'center', padding: '5rem 1rem', fontFamily: 'Arial, sans-serif' }}>
       <Helmet>
-        <title>Grant Watson | Full Stack Developer & Problem Solver</title>
+        <title>Grant Watson | Full Stack Developer</title>
         <meta name="description" content="Explore Grant Watson's developer portfolio. Skilled in modern app development, bug fixing, and data scraping. Hire on Fiverr or view resume." />
-<meta name="keywords" content="Grant Watson, software developer, full stack developer, React developer, C# developer, Blazor, Firebase, bug fixing, freelance web developer, REST API, portfolio website, resume site, .NET, JavaScript developer, Vite React developer, Sanity CMS, hire developer, developer for hire, fix React app, ticket system, web app developer, freelance programmer" />        <meta name="author" content="Grant Watson" />
+        <meta name="keywords" content="Grant Watson, software developer, full stack developer, React developer, C# developer, Blazor, Firebase, bug fixing, freelance web developer, REST API, portfolio website, resume site, .NET, JavaScript developer, Vite React developer, Sanity CMS, hire developer, developer for hire, fix React app, ticket system, web app developer, freelance programmer" />        <meta name="author" content="Grant Watson" />
       </Helmet>
       <img
         src={logo}
