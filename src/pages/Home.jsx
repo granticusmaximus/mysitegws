@@ -37,6 +37,19 @@ const Home = () => {
         >
           View Resume
         </a>
+        <Link
+          to="/portfolio"
+          style={{
+            padding: '0.75rem 1.5rem',
+            fontSize: '1.25rem',
+            color: 'white',
+            backgroundColor: '#007bff',
+            borderRadius: '0.3rem',
+            textDecoration: 'none',
+          }}
+        >
+          View Portfolio
+        </Link>
       </div>
       <hr style={{ marginTop: '3rem', marginBottom: '1rem', border: 'none', borderTop: '2px solid #ccc', width: '60%' }} />
       <h2 style={{ textAlign: 'center', fontSize: '2rem', marginBottom: '1.5rem' }}>Fiverr Gigs</h2>
