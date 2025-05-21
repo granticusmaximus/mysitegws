@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const projects = [
   {
@@ -23,6 +24,21 @@ const Portfolio = () => {
   return (
     <div style={{ padding: '2rem' }}>
       <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Project Portfolio</h2>
+      <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+        <Link
+          to="/"
+          style={{
+            padding: '0.5rem 1rem',
+            fontSize: '1rem',
+            backgroundColor: '#007bff',
+            color: 'white',
+            textDecoration: 'none',
+            borderRadius: '0.25rem',
+          }}
+        >
+          ← Back Home
+        </Link>
+      </div>
       <div
         style={{
           display: 'flex',
