@@ -10,8 +10,7 @@ const Home = () => {
       <Helmet>
         <title>Grant Watson | Full Stack Developer & Problem Solver</title>
         <meta name="description" content="Explore Grant Watson's developer portfolio. Skilled in modern app development, bug fixing, and data scraping. Hire on Fiverr or view resume." />
-        <meta name="keywords" content="Grant Watson, React Developer, Full Stack, Fiverr, resume, portfolio, app development, bug fixing, scraping, software development, developer for hire, csharp, reactjs, react, developer" />
-        <meta name="author" content="Grant Watson" />
+<meta name="keywords" content="Grant Watson, software developer, full stack developer, React developer, C# developer, Blazor, Firebase, bug fixing, freelance web developer, REST API, portfolio website, resume site, .NET, JavaScript developer, Vite React developer, Sanity CMS, hire developer, developer for hire, fix React app, ticket system, web app developer, freelance programmer" />        <meta name="author" content="Grant Watson" />
       </Helmet>
       <img
         src={logo}
