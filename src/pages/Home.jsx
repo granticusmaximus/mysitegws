@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import logo from '../assets/img/logo.png';
-import resume from '../assets/pdf/GWResume.pdf';
+import resume from '../assets/pdf/GrantWatsonCV.pdf';
 
 const Home = () => {
   return (
@@ -61,7 +61,7 @@ const Home = () => {
             textDecoration: 'none',
           }}
         >
-          View Blog Posts
+          View Blog
         </Link>
       </div>
       <hr style={{ marginTop: '3rem', marginBottom: '1rem', border: 'none', borderTop: '2px solid #ccc', width: '60%' }} />
