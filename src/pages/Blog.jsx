@@ -55,7 +55,7 @@ function Blog() {
       </Link>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         {posts.map((post) => (
-          <div key={post._id} style={{ flex: '1 0 calc(20% - 2rem)', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+          <div key={post._id} style={{ flex: '1 0 calc(20% - 2rem)', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'left' }}>
             <Link to={`/blog/${post.slug.current}`}>
               <h3>{post.title}</h3>
             </Link>

@@ -6,7 +6,7 @@ import resume from '../assets/pdf/GrantWatsonCV.pdf';
 
 const Home = () => {
   return (
-    <div className="landing-page" style={{ textAlign: 'center', padding: '5rem 1rem', fontFamily: 'Arial, sans-serif' }}>
+    <div className="landing-page" style={{ textAlign: 'left', padding: '5rem 1rem', fontFamily: 'Arial, sans-serif' }}>
       <Helmet>
         <title>Grant Watson | Full Stack Developer</title>
         <meta name="description" content="Explore Grant Watson's developer portfolio. Skilled in modern app development, bug fixing, and data scraping. Hire on Fiverr or view resume." />
@@ -21,7 +21,7 @@ const Home = () => {
       <p style={{ fontSize: '1.5rem', marginBottom: '2rem' }}>
         Software Developer | Tech Enthusiast | Lifelong Learner
       </p>
-      <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
+      <div style={{ display: 'flex', justifyContent: 'left', gap: '1rem' }}>
         <a
           href={resume}
           target="_blank"
@@ -65,8 +65,8 @@ const Home = () => {
         </Link>
       </div>
       <hr style={{ marginTop: '3rem', marginBottom: '1rem', border: 'none', borderTop: '2px solid #ccc', width: '60%' }} />
-      <h2 style={{ textAlign: 'center', fontSize: '2rem', marginBottom: '1.5rem' }}>Fiverr Gigs</h2>
-      <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+      <h2 style={{ textAlign: 'left', fontSize: '2rem', marginBottom: '1.5rem' }}>Fiverr Gigs</h2>
+      <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'left', gap: '1rem', flexWrap: 'wrap' }}>
         <a
           href="https://www.fiverr.com/s/99o1eP0"
           target="_blank"
