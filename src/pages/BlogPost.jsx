@@ -4,6 +4,27 @@ import { useParams, Link } from 'react-router-dom';
 import sanityClient from '../services/sanity';
 import { PortableText } from '@portabletext/react';
 import { Helmet } from 'react-helmet';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
+const components = {
+  types: {
+    code: ({ value }) => {
+      return (
+        <div style={{ marginBottom: '1rem' }}>
+          <SyntaxHighlighter
+            language={value.language || 'javascript'}
+            style={vscDarkPlus}
+            showLineNumbers
+            wrapLongLines
+          >
+            {value.code}
+          </SyntaxHighlighter>
+        </div>
+      );
+    },
+  },
+};
 
 function BlogPost() {
   const { slug } = useParams();
@@ -47,14 +68,16 @@ function BlogPost() {
 
       <h1>{post.title}</h1>
       <p>{new Date(post.publishedAt).toLocaleDateString()}</p>
+
       {post.mainImage?.asset?.url && (
         <img
           src={post.mainImage.asset.url}
           alt={post.title}
-          style={{ maxWidth: '100%' }}
+          style={{ maxWidth: '100%', marginBottom: '1.5rem' }}
         />
       )}
-      <PortableText value={post.body} />
+
+      <PortableText value={post.body} components={components} />
     </div>
   );
 }
