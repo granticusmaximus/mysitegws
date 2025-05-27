@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "postbuild": "cp public/_redirects dist/_redirect"
+    "postbuild": "cp public/_redirects dist/_redirects"
   },
   "dependencies": {
     "@portabletext/react": "^3.2.1",
