@@ -6,6 +6,9 @@ import { PortableText } from '@portabletext/react';
 import { Helmet } from 'react-helmet';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import rehypeSanitize from 'rehype-sanitize';
 
 const components = {
   types: {
@@ -37,6 +40,7 @@ function BlogPost() {
           title,
           publishedAt,
           body,
+          bodyMarkdown,
           mainImage {
             asset -> {
               url
@@ -77,7 +81,20 @@ function BlogPost() {
         />
       )}
 
-      <PortableText value={post.body} components={components} />
+      {post.body ? (
+        <PortableText value={post.body} components={components} />
+      ) : post.bodyMarkdown ? (
+        <div style={{ marginTop: '2rem' }}>
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeSanitize]}
+          >
+            {post.bodyMarkdown}
+          </ReactMarkdown>
+        </div>
+      ) : (
+        <p>No content available.</p>
+      )}
     </div>
   );
 }
