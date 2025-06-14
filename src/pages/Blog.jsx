@@ -149,6 +149,15 @@ function Blog() {
             </div>
           ))}
       </div>
+      <hr/>
+      <center>
+        <p>
+          This blog is sponsored by:
+        </p>
+        <a href="https://www.kqzyfj.com/im65iqzwqyDFEFIKFHKMDFEJEEGHM" target="_blank">
+        <img src="https://www.lduhtrp.net/p8105xjnbhf0212572479021611349" alt="Corel Official Store" border="0"/></a>
+      </center>
+      <hr/>
     </div>
   );
 }

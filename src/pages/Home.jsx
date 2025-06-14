@@ -22,6 +22,45 @@ const Home = () => {
         Software Developer | Tech Enthusiast | Lifelong Learner
       </p>
       <div style={{ display: 'flex', justifyContent: 'left', gap: '1rem' }}>
+        <Link
+          to="/about"
+          style={{
+            padding: '0.75rem 1.5rem',
+            fontSize: '1.25rem',
+            color: 'white',
+            backgroundColor: '#007bff',
+            borderRadius: '0.3rem',
+            textDecoration: 'none',
+          }}
+        >
+          About
+        </Link>
+        <Link
+          to="/blog"
+          style={{
+            padding: '0.75rem 1.5rem',
+            fontSize: '1.25rem',
+            color: 'white',
+            backgroundColor: '#007bff',
+            borderRadius: '0.3rem',
+            textDecoration: 'none',
+          }}
+        >
+          Blog
+        </Link>
+        <Link
+          to="/contact"
+          style={{
+            padding: '0.75rem 1.5rem',
+            fontSize: '1.25rem',
+            color: 'white',
+            backgroundColor: '#007bff',
+            borderRadius: '0.3rem',
+            textDecoration: 'none',
+          }}
+        >
+          Contact Me
+        </Link>
         <a
           href={resume}
           target="_blank"
@@ -35,34 +74,8 @@ const Home = () => {
             textDecoration: 'none',
           }}
         >
-          View Resume
+          My CV
         </a>
-        <Link
-          to="/portfolio"
-          style={{
-            padding: '0.75rem 1.5rem',
-            fontSize: '1.25rem',
-            color: 'white',
-            backgroundColor: '#007bff',
-            borderRadius: '0.3rem',
-            textDecoration: 'none',
-          }}
-        >
-          View Portfolio
-        </Link>
-        <Link
-          to="/blog"
-          style={{
-            padding: '0.75rem 1.5rem',
-            fontSize: '1.25rem',
-            color: 'white',
-            backgroundColor: '#007bff',
-            borderRadius: '0.3rem',
-            textDecoration: 'none',
-          }}
-        >
-          View Blog
-        </Link>
       </div>
       <hr style={{ marginTop: '3rem', marginBottom: '1rem', border: 'none', borderTop: '2px solid #ccc', width: '60%' }} />
       <h2 style={{ textAlign: 'left', fontSize: '2rem', marginBottom: '1.5rem' }}>Fiverr Gigs</h2>
