@@ -45,6 +45,12 @@ function BlogPost() {
             asset -> {
               url
             }
+          },
+          seo {
+            metaTitle,
+            metaDescription,
+            keywords,
+            canonicalUrl
           }
         }`,
         { slug }
@@ -62,8 +68,19 @@ function BlogPost() {
   return (
     <div style={{ padding: '2rem' }}>
       <Helmet>
-        <title>{post.title} | Grant Watson Blog</title>
-        <meta name="description" content={`Read blog post: ${post.title}`} />
+        <title>{post.seo?.metaTitle || `${post.title} | Grant Watson Blog`}</title>
+        {post.seo?.metaDescription && (
+          <meta name="description" content={post.seo.metaDescription} />
+        )}
+        {post.seo?.keywords && (
+          <meta name="keywords" content={post.seo.keywords.join(', ')} />
+        )}
+        {post.seo?.canonicalUrl && (
+          <link rel="canonical" href={post.seo.canonicalUrl} />
+        )}
+        <meta property="og:title" content={post.seo?.metaTitle || post.title} />
+        <meta property="og:description" content={post.seo?.metaDescription || ''} />
+        <meta property="og:type" content="article" />
       </Helmet>
 
       <Link to="/blog" style={{ display: 'inline-block', marginBottom: '1rem' }}>

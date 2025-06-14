@@ -113,6 +113,12 @@ const Home = () => {
           I will fix bugs in your app
         </a>
       </div>
+      <br/><br/><br/>
+      <center>
+        <a href="https://www.jdoqocy.com/click-9338145-13942202" target="_top">
+        <img src="https://www.ftjcfx.com/image-9338145-13942202" width="728" height="90" alt="" border="0"/></a>
+      </center>
+      
     </div>
   );
 };
