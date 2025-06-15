@@ -112,6 +112,14 @@ function BlogPost() {
       ) : (
         <p>No content available.</p>
       )}
+      <div>
+        <hr/>
+        <center>
+          10x the amount of jobs you can apply for in an hour with <a href="https://www.dpbolvw.net/d2100nmvsmu9BABEGBDGI9BFHGCBFE" target="_blank">Apply4Me</a>
+          <img src="https://www.ftjcfx.com/s9118ax0pvtEGFGJLGILNEGKMLHGKJ" width="1" height="1" border="0"/>
+        </center>
+        <hr/>
+      </div>
     </div>
   );
 }
