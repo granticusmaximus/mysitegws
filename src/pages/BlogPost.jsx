@@ -26,6 +26,17 @@ const components = {
         </div>
       );
     },
+    affiliateAd: ({ value }) => (
+      <div style={{ textAlign: 'center', margin: '2rem 0' }}>
+        <a href={value.linkUrl} target="_blank" rel="noopener noreferrer">
+          <img
+            src={value.imageUrl}
+            alt={value.alt || 'Affiliate Ad'}
+            style={{ maxWidth: '100%', height: 'auto' }}
+          />
+        </a>
+      </div>
+    ),
   },
 };
 
