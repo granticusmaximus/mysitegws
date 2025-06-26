@@ -1,6 +1,6 @@
 import { SitemapStream, streamToPromise } from 'sitemap';
 import { createWriteStream } from 'fs';
-import sanityClient from '../../mysitegws/src/services/sanity.js';
+import sanityClient from '.././src/services/sanity.js';
 
 const siteUrl = 'https://grantwatson.dev';
 
