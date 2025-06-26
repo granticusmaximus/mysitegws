@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import sanityClient from '../services/sanity';
 import { PortableText } from '@portabletext/react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import ReactMarkdown from 'react-markdown';
@@ -92,6 +92,9 @@ function BlogPost() {
         <meta property="og:title" content={post.seo?.metaTitle || post.title} />
         <meta property="og:description" content={post.seo?.metaDescription || ''} />
         <meta property="og:type" content="article" />
+        {post.mainImage?.asset?.url && (
+          <meta property="og:image" content={post.mainImage.asset.url} />
+        )}
       </Helmet>
 
       <Link to="/blog" style={{ display: 'inline-block', marginBottom: '1rem' }}>

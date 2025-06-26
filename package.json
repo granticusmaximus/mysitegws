@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "prebuild": "cpy src/assets/pdf/GWResume.pdf public/",
-    "build": "vite build",
+    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "build": "npm run generate-sitemap && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "postbuild": "cp public/_redirects dist/_redirects"
@@ -19,7 +20,7 @@
     "emailjs-com": "^3.2.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-helmet": "^6.1.0",
+    "react-helmet-async": "^2.0.5",
     "react-markdown": "^10.1.0",
     "react-photo-view": "^1.2.7",
     "react-router-dom": "^7.6.0",
@@ -39,6 +40,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-plugin-pwa": "^1.0.0"
   }
 }

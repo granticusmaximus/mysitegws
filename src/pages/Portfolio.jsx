@@ -3,20 +3,8 @@ import { Link } from 'react-router-dom';
 
 const projects = [
   {
-    name: 'Recipe Manager',
-    url: 'https://meal.gwsapp.net/',
-  },
-  {
     name: 'Krissy Personal Site',
     url: 'https://krissype.gwsapp.net/',
-  },
-  {
-    name: 'Password Generator',
-    url: 'https://passgen.gwsapp.net/',
-  },
-  {
-    name: 'Note App',
-    url: 'https://notes.gwsapp.net/',
   },
 ];
 

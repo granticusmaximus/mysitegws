@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import sanityClient from '../services/sanity';
+import { fetchAllPosts } from '../services/blogService';
 import { Link } from 'react-router-dom';
 import logo from '../assets/img/logo.png';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 function Blog() {
   const [posts, setPosts] = useState([]);
@@ -10,25 +10,10 @@ function Blog() {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   useEffect(() => {
-    sanityClient
-      .fetch(`*[_type == "post"] | order(publishedAt desc){
-        _id,
-        title,
-        slug,
-        publishedAt,
-        "author": author->name,
-        mainImage {
-          asset -> {
-            url
-          }
-        },
-        categories[]->{
-          title,
-          _id
-        }
-      }`)
+    fetchAllPosts()
       .then((fetchedPosts) => {
         setPosts(fetchedPosts);
+        console.log('Fetched posts:', fetchedPosts);
         const categories = fetchedPosts.flatMap(p => p.categories || []);
         const unique = Array.from(new Map(categories.map(cat => [cat._id, cat])).values());
         setAllCategories(unique);

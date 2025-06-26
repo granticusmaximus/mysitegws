@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -42,6 +43,12 @@ const Contact = () => {
 
   return (
     <div style={{ padding: '2rem', maxWidth: '600px', margin: '0 auto' }}>
+      <Helmet>
+        <title>Contact Grant Watson | Let's Build Something</title>
+        <meta name="description" content="Get in touch with Grant Watson for software development projects, collaboration, or freelance opportunities. Use the contact form to send a message directly." />
+        <meta property="og:title" content="Contact Grant Watson | Let's Build Something" />
+        <meta property="og:description" content="Reach out to Grant Watson for full-stack development help or to discuss project ideas." />
+      </Helmet>
       <div style={{ marginBottom: '1rem' }}>
         <Link to="/" style={{ textDecoration: 'none', color: '#007bff' }}>&larr; Back to Home</Link>
       </div>

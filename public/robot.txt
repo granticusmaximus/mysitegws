@@ -1,1 +1,4 @@
 google-site-verification=WGeICvjTnT1kNOkdS5NohuAt52YfQEk7zdOSKW8D2JQ
+User-agent: *
+Allow: /
+Sitemap: https://grantwatson.dev/sitemap.xml

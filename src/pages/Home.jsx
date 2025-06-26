@@ -1,8 +1,7 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import logo from '../assets/img/logo.png';
-import resume from '../assets/pdf/GrantWatsonCV.pdf';
 
 const Home = () => {
   return (
@@ -62,7 +61,7 @@ const Home = () => {
           Contact Me
         </Link>
         <a
-          href={resume}
+          href="/GrantWatsonCV.pdf"
           target="_blank"
           rel="noopener noreferrer"
           style={{
