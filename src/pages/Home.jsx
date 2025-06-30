@@ -60,6 +60,19 @@ const Home = () => {
         >
           Contact Me
         </Link>
+        <Link
+          to="/portfolio"
+          style={{
+            padding: '0.75rem 1.5rem',
+            fontSize: '1.25rem',
+            color: 'white',
+            backgroundColor: '#007bff',
+            borderRadius: '0.3rem',
+            textDecoration: 'none',
+          }}
+        >
+          My Portfolio
+        </Link>
         <a
           href="/GrantWatsonCV.pdf"
           target="_blank"

@@ -3,8 +3,12 @@ import { Link } from 'react-router-dom';
 
 const projects = [
   {
-    name: 'Krissy Personal Site',
+    name: 'Recipe App built with React and Firebase',
     url: 'https://krissype.gwsapp.net/',
+  },
+  {
+    name: 'Website Lead Scraper (Python + Docker)',
+    url: 'https://leads.gwsapp.net/',
   },
 ];
 
