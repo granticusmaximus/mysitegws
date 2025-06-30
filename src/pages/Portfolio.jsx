@@ -53,7 +53,7 @@ const Portfolio = () => {
                 textAlign: 'center',
               }}
             >
-              <h3 style={{ margin: '0 0 0.5rem' }}>{project.name}</h3>
+              <h3 style={{ margin: '0 0 0.5rem', color: '#000' }}>{project.name}</h3>
               <a
                 href={project.url}
                 target="_blank"
