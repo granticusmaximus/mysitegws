@@ -52,6 +52,7 @@ function BlogPost() {
           publishedAt,
           body,
           bodyMarkdown,
+          bodyType,
           mainImage {
             asset -> {
               url
@@ -112,9 +113,9 @@ function BlogPost() {
         />
       )}
 
-      {post.body ? (
+      {post.bodyType === 'rich' && post.body ? (
         <PortableText value={post.body} components={components} />
-      ) : post.bodyMarkdown ? (
+      ) : post.bodyType === 'markdown' && post.bodyMarkdown ? (
         <div style={{ marginTop: '2rem' }}>
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
