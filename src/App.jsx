@@ -9,6 +9,7 @@ const Home = React.lazy(() => import('./pages/Home'));
 const Portfolio = React.lazy(() => import('./pages/Portfolio'));
 const Blog = React.lazy(() => import('./pages/Blog'));
 const BlogPost = React.lazy(() => import('./pages/BlogPost'));
+import ChatBot from './components/ChatBot';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
         </Suspense>
+        <ChatBot />
       </HelmetProvider>
     </Router>
   );

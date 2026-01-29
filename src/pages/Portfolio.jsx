@@ -7,8 +7,12 @@ const projects = [
     url: 'https://krissype.gwsapp.net/',
   },
   {
-    name: 'Website Lead Scraper (Python + Docker)',
-    url: 'https://leads.gwsapp.net/',
+    name: 'Text Encryption (Python + Docker)',
+    url: 'https://textencrypt.gwsapp.net',
+  },
+  {
+    name: 'Password Generator (Python + Docker)',
+    url: 'https://textencrypt.gwsapp.net',
   },
 ];
 
