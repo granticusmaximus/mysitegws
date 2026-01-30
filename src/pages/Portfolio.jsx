@@ -14,6 +14,11 @@ const projects = [
     name: 'Password Generator (Python + Docker)',
     url: 'https://textencrypt.gwsapp.net',
   },
+
+  {
+    name: 'Podcast Aggregator/Player (React + Docker)',
+    url: 'https://pods.gwsapp.net',
+  },
 ];
 
 const Portfolio = () => {
