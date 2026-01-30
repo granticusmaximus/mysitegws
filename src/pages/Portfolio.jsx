@@ -12,7 +12,7 @@ const projects = [
   },
   {
     name: 'Password Generator (Python + Docker)',
-    url: 'https://textencrypt.gwsapp.net',
+    url: 'https://passgen.gwsapp.net',
   },
 
   {
