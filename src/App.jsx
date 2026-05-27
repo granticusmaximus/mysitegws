@@ -4,6 +4,7 @@ import './App.css';
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
+import AdminRedirect from './pages/AdminRedirect';
 import Contact from './pages/Contact';
 const Home = React.lazy(() => import('./pages/Home'));
 const Portfolio = React.lazy(() => import('./pages/Portfolio'));
@@ -17,6 +18,7 @@ function App() {
         <Suspense fallback={<div style={{ padding: '2rem', textAlign: 'center' }}>Loading...</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/admin/*" element={<AdminRedirect />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/portfolio" element={<Portfolio />} />

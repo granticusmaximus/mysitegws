@@ -1,1 +1,3 @@
+/admin      https://admin.grantwatson.dev/admin  301!
+/admin/*    https://admin.grantwatson.dev/admin/:splat  301!
 /*    /index.html   200

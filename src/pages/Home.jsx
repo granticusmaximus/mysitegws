@@ -73,6 +73,19 @@ const Home = () => {
         >
           My Portfolio
         </Link>
+        <Link
+          to="/admin"
+          style={{
+            padding: '0.75rem 1.5rem',
+            fontSize: '1.25rem',
+            color: 'white',
+            backgroundColor: '#212529',
+            borderRadius: '0.3rem',
+            textDecoration: 'none',
+          }}
+        >
+          Admin
+        </Link>
         <a
           href="/GrantWatsonCV.pdf"
           target="_blank"
